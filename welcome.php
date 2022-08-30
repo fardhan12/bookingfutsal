@@ -11,10 +11,8 @@
 <body>
     <h1>Selamat datang di Futsal KUY</h1>
     <p>Silahkan klik tombol daftar di bawah ini</p>
-    <a href="pendaftar.php">Daftar</a> ||
-    <h3>Masuk sebagai admin</h3>
-    <a href="data_lapangan.php">Lapangan</a> ||
-    <a href="data_pembayaran">Pembayaran</a> ||
+    <a href="./form/pendaftar.php">Daftar</a> ||
+    <a href="./logout.php">LOGOUT</a> ||
 </body>
 
 </html>

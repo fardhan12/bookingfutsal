@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <a href="index.php">Back To Home</a>
+    <a href="welcome.php">Back To Home</a>
     <h1>Silahkan isi bidang di bawah ini</h1>
     <form action="input_data_pembayaran.php" method="post">
 

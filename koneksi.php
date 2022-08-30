@@ -3,8 +3,8 @@ $host = "localhost";
 $user = "root";
 $password = "";
 $database = "dhan_futsal";
-$con = mysqli_connect($host, $user, $password, $database);
-if($con){
+$koneksi = mysqli_connect($host, $user, $password, $database);
+if(!$koneksi){
     echo "koneksi gagal";
 }
 ?>
