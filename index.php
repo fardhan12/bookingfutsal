@@ -14,24 +14,26 @@ if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM login WHERE username='$username' AND password='$password'";
+    $call = "call login('$username' , '$password')";
+    // $call = "SELECT * FROM login WHERE username='$username' and password='$password'";
 
-    $result = mysqli_query($koneksi, $query);
+    $result = mysqli_query($koneksi, $call);
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
         if($row['hak_akses'] == '1') {
             $_SESSION['username'] = $row['username'];
             $_SESSION['hak_akses'] = $row['hak_akses'];
             header('location: admin/welcome.php');
-             // var_dump($row);
+            // var_dump($row);
         } elseif ($row['hak_akses'] == '9') {
             $_SESSION['username'] = $row['username'];
             $_SESSION['hak_akses'] = $row['hak_akses'];
             header('location: welcome.php');
+            // var_dump($row);
+
             
         }
-        
-        
+                
     } else {
         echo "<script>alert('Username atau Password Salah, Silahkan di ulangi')</script>";
         // echo "error";

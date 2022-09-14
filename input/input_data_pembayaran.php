@@ -1,6 +1,6 @@
 <?php
 
-include "koneksi.php";
+include "../koneksi.php";
 
 $id_pembayaran = $_POST['id_pembayaran'];
 $id_pendaftar = $_POST['id_pendaftar'];
@@ -13,7 +13,7 @@ $insert = mysqli_query($koneksi, "INSERT INTO data_pembayaran SET id_pembayaran=
 jenis_lapangan='$jenis_lapangan', jenis_pembayaran='$jenis_pembayaran', nominal_pembayaran='$nominal_pembayaran', status_pembayaran='$status_pembayaran'");
 
 if ($insert == true) {
-    header('location: index.php');
+    header('location: ../admin/welcome.php');
 } else {
     echo "<script>alert('Gagal input data pembayaran')</script>";
 }

@@ -16,7 +16,7 @@ if($_SESSION['level'] = "") {
 </head>
 
 <body>
-    <h3>Masuk sebagai admin</h3>
+    <h3>MASUK SEBAGAI ADMIN</h3>
     <a href="data_lapangan.php">Lapangan</a> ||
     <a href="data_pembayaran.php">Pembayaran</a> ||
 </body>

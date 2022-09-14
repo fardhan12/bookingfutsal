@@ -1,3 +1,6 @@
+<?php
+    include "../koneksi.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +14,7 @@
 <body>
     <a href="welcome.php">Back To Home</a>
     <h1>Silahkan isi bidang di bawah ini</h1>
-    <form action="input_data_pembayaran.php" method="post">
+    <form action="../input/input_data_pembayaran.php" method="post">
 
         <label for="">Id Pembayaran</label><br>
         <input type="text" name="id_pembayaran" id="" value="<?= rand(0000,9999)?>" readonly>

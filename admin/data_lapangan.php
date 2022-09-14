@@ -1,6 +1,8 @@
+<?php
+    include "../koneksi.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +13,7 @@
 <body>
     <a href="welcome.php">Back To Home</a>
     <h1>Silahkan isi data lapangan</h1>
-    <form action="input_data_lapangan.php" method="post">
+    <form action="../input/input_data_lapangan.php" method="post">
 
         <label for="">Id Lapangan</label><br>
         <input type="text" name="id_lapangan" id="" value="<?= rand(0000,9999)?>" readonly>
